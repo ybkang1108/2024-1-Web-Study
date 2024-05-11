@@ -16,7 +16,7 @@
     </html>
 
 - 열린 태그<> 와 닫힌 태그</> 사이에 콘텐츠를 위치하여 문서의 구조를 표현할 수 있음
-    + <h1>~<h6>, <p>, <button>, <img>, <input> 등
+    + `<h1>`~`<h6>`, `<p>`, `<button>`, `<img>`, `<input>` 등
 
 ### CSS
 #### Cascading Style Sheets, HTML요소를 다양한 스타일로 디자인할 수 있음
@@ -38,7 +38,7 @@
 HTML 태그 내에 style 속성을 이용하여 CSS 지정   
 
 2. Internal Stylesheet   
-<head>태그 내에 <style>태그를 삽입하고 해당 태그 사이에 CSS 문법 작성   
+`<head>`태그 내에 `<style>`태그를 삽입하고 해당 태그 사이에 CSS 문법 작성   
 
     <head>
         <style>
@@ -50,7 +50,7 @@ HTML 태그 내에 style 속성을 이용하여 CSS 지정
     </head>
 
 3. External Stylesheet   
-<head>태그 내에 <link>태그를 삽입하여 HTML문서에 CSS연결   
+`<head>`태그 내에 `<link>`태그를 삽입하여 HTML문서에 CSS연결   
 
     <head>
         <style>
