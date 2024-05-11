@@ -68,4 +68,4 @@ HTML 태그 내에 style 속성을 이용하여 CSS 지정
     
 ---
 ### 과제 사진
-###### <img src="/Week1/webstudy.jpg" width="70%" alt="screenshot"></img>
+###### <img src="/Week1/web_study.jpg" width="70%" alt="screenshot"></img>
