@@ -2,7 +2,6 @@
 
 ### HTML
 #### Hypertext Markup Language, 웹 페이지를 만드는 데 사용
-<img src="/Week1/structure.jpg" width="30%" alt="HTML structure">
 
 ```
 <!DOCTYPE html>     // 브라우저에 해당 문서가 HTML임을 명시
