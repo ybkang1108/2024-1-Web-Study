@@ -1,27 +1,63 @@
 ## Web-Study WIL1
 
-### 웹의 역사
-#### 2004년
-##### Facebook 탄생
-<img src="/Week1/history-2004.jpg" width="50%">
+### HTML
+#### Hypertext Markup Language, 웹 페이지를 만드는 데 사용
+<img src="/Week1/structure.jpg" width="30%" alt="HTML structure">
 
-- 데이터베이스에서 필요한 데이터를 불러와 **웹 서버에서 HTML 페이지를 모두 만들어** 클라이언트에 제공
-- 웹 브라우저는 **HTML 다운로드 및 정보 제공**의 역할만 함
+    <!DOCTYPE html>     // 브라우저에 해당 문서가 HTML임을 명시
+    <html>
+    <head>              // 브라우저가 해당 문서를 해석하는데 필요한 metadata표기
+        <title>page_title</title>
+    </head>
+    <body> // 브라우저에 표시될 영역
+        <h1>title</h1>
+        <p>body</p>
+    </body>
+    </html>
 
-#### 2010년
-##### -> 제이쿼리 등장
-- jQuery: HTML 속에서 클라이언트에서 동작할 수 있는 **스크립트 언어를 동작**할 수 있게 하는 라이브러리
+- 열린 태그<> 와 닫힌 태그</> 사이에 콘텐츠를 위치하여 문서의 구조를 표현할 수 있음
+    + <h1>~<h6>, <p>, <button>, <img>, <input> 등
 
-#### 2011년
-- 속도 우선 -> 서버에서 모든 내용을 렌더링하려고 함
-- 로드 속도를 빠르게 하기 위해 번`들의 크기를 줄여야 함
-*자바스크립트 코드를 **최소화**하고자 했지만 서버 렌더링이 처리할 수 있는 규모에 한계 존재*
+### CSS
+#### Cascading Style Sheets, HTML요소를 다양한 스타일로 디자인할 수 있음
 
-#### React의 등장
-##### -> 페이스북이 만든 Javascript 기반의 라이브러리
+    h1 {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        color: blue;
+        text-align: center;
+    }
 
-- 가상 DOM을 사용해 DOM 조작을 효율적으로 할 수 있게 됨
-- 이전에는 페이스북 페이지에서 좋아요 하나만 눌러도 페이지 전체를 새로 업데이트해야 했지만 가상 DOM을 사용하면 변경된 부분만 추적하여 업데이트 하므로 불필요한 리렌더링(re-rendering)을 방지함
+- 셀렉터(Selector): 스타일을 지정할 HTML요소 선택(h1)
+    * HTML 태그 이외에도 #을 이용하여 특정 요소에 지정된 id에 따라 스타일을 지정하거나 .을 이용해 class를 공유하는 특정 요소의 스타일을 지정할 수 있음
+- 선언 블록(Declaration): 셀렉터에서 선택한 요소에 대한 스타일을 지정(중괄호 안의 내용)
+
+### HTML에 CSS적용하는 법
+1. Inline Style   
+HTML 태그 내에 style 속성을 이용하여 CSS 지정   
+
+2. Internal Stylesheet   
+<head>태그 내에 <style>태그를 삽입하고 해당 태그 사이에 CSS 문법 작성   
+
+    <head>
+        <style>
+            h1 {
+                color: blue;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+3. External Stylesheet   
+<head>태그 내에 <link>태그를 삽입하여 HTML문서에 CSS연결   
+
+    <head>
+        <style>
+            <link rel="stylesheet href="/style.css">
+        </style>
+    </head>
+
 
 ---
 ### 과제 사진
