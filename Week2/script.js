@@ -16,10 +16,10 @@ function countClicks() {
             title.style.fontSize = "100px";
             break;
         case 101:
-            title.textContent = '이걸 왜' + '<br/>' + '1000번이나...';
+            title.innerHTML = '이걸 왜' + '<br/>' + '1000번이나...';
             title.style.fontSize = "200px";
             setTimeout(function() {
-                title.textContent = "GDSC Hongik!";
+                title.innerHTML = "GDSC Hongik!";
                 title.style.fontSize = "100px";
             }, 1000); // 1000ms동안만 title 변경      
             break;
@@ -35,7 +35,7 @@ var colorText = document.querySelectorAll(".colorText");
 function changeBgColor(button) {
     const bgColor = button.style.backgroundColor;
     document.body.style.backgroundColor = bgColor;
-    if (bgColor == "cornflowerblue") {
+    if (bgColor == "royalblue") { // color가 royalblue일 때만 text색상 변경
         colorText.forEach(element => {
             element.style.color = "white";
         });
