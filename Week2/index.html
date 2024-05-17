@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>2024-1-Web-Study</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title">GDSC Hongik!</h1>
+        <div class="click">
+            <container>
+                <button id="clickButton" onclick="countClicks()">CLICK!</button>
+            </container>
+        </div>
+        <div class="changeColor">
+            <span class="colorText">Change<br>Color</span>
+            <button class="changeColorButton" onclick="changeColor(this)" style="background-color: blue;"></button>
+            <button class="changeColorButton" onclick="changeColor(this)" style="background-color: yellowgreen;"></button>
+            <button class="changeColorButton" onclick="changeColor(this)" style="background-color: rgb(211, 78, 54);"></button>
+            <button class="changeColorButton" onclick="changeColor(this)" style="background-color: rgb(229, 229, 41);"></button>
+            <button class="changeColorButton" onclick="changeColor(this)" style="background-color: pink;"></button>
+            <span class="colorText">Change<br>Background<br>Color</span>
+            <button class="changeColorButton" onclick="changeBgColor(this)" style="background-color: white;"></button>
+            <button class="changeColorButton" onclick="changeBgColor(this)" style="background-color: cornflowerblue;"></button>
+            <button class="changeColorButton" onclick="changeBgColor(this)" style="background-color: rgb(34, 34, 34);"></button>
+        </div>
+        <script src="/Week2/script.js"></script>
+    </body>
+</html>

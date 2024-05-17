@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+html, body {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    text-align: center;
+} 
+
+* { /*기본 마진, 패딩 제거*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 40px;
+    color: blue;
+    margin-top: 20px;;
+    margin: 50px;
+}
+
+span {
+    font-weight: 500;
+    font-size: 20px;
+    color: grey;
+}
+
+span.colorText {
+    display: flex;
+    align-items: center;
+}
+
+.click {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.changeColor {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: row;
+    position:absolute;
+    bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 100%;
+}
+
+button#clickButton {
+    border: none;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: 15px;
+    background-color: rosybrown;
+    color: white;
+}
+
+button.changeColorButton {
+    border-color: beige;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+button:hover {
+    opacity: 70%;
+}
