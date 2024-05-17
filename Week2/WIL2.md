@@ -59,4 +59,4 @@
     **CSS 우선 순위: Inline > External = Internal**
     inline CSS는 다른 스타일 규칙보다 우선시되므로 문제가 발생할 수 있음    
 
-_Inline CSS를 지양하는 것이 좋다!_
+_Inline CSS는 지양하는 것이 좋다!_
