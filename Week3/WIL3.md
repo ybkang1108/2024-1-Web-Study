@@ -4,42 +4,42 @@
 
 `GET`: 리소스를 조회하는 method, query를 통해서 서버에 데이터 전달
 
-<img src='./GET.png' width=50%>
+&emsp;&emsp;<img src='./GET.png' width=50%>
 
-_imhere사이트에 접속할 때 GET method 사용됨_
+&emsp;&emsp;_imhere사이트에 접속할 때 GET method 사용됨_
 <br>
 <br>
 
 `POST`: 요청 데이터를 처리하는 method, msg body를 통해 서버로 요청 데이터 전달    
 **주로 신규 리소스를 등록하고 프로세스를 처리하는 데 사용**
 
-<img src='./POST.png' width=50%>
+&emsp;&emsp;<img src='./POST.png' width=50%>
 
-_toslide 사이트에서 토큰을 전달할 때 POST method 사용됨_
+&emsp;&emsp;_toslide 사이트에서 토큰을 전달할 때 POST method 사용됨_
 <br>
 <br>
 
 `PUT`: 리소스가 있다면 요청을 보낸 데이터로 **덮어씌우고** 없다면 새로 생성
 
-<img src='./PUT.png' width=25%>
+&emsp;&emsp;<img src='./PUT.png' width=25%>
 
-_REST API를 사용한 개발 서버에서 데이터를 추가할 때 사용됨_
+&emsp;&emsp;_REST API를 사용한 개발 서버에서 데이터를 추가할 때 사용됨_
 <br>
 <br>
 
 `PATCH`: 리소스의 **부분 변경**
 
-<img src='./PATCH.png' width=50%>
+&emsp;&emsp;<img src='./PATCH.png' width=50%>
 
-_ChatGPT에서 채팅의 이름을 변경하거나 삭제할 때 PATCH method 사용됨_
+&emsp;&emsp;_ChatGPT에서 채팅의 이름을 변경하거나 삭제할 때 PATCH method 사용됨_
 <br>
 <br>
 
 `DELETE`: 요청받은 리소스 제거
 
-<img src='./DELETE.png' width=50%>
+&emsp;&emsp;<img src='./DELETE.png' width=50%>
 
-_REST API를 사용한 개발 서버에서 데이터를 추가할 때 사용됨_
+&emsp;&emsp;_REST API를 사용한 개발 서버에서 데이터를 삭제할 때 사용됨_
 <br>
 <br>
 
@@ -50,7 +50,6 @@ _REST API를 사용한 개발 서버에서 데이터를 추가할 때 사용됨_
 - 하나의 연결당 하나의 요청 처리 -> object마다 TCP를 열고 닫아야 함
 - 필요한 만큼 연결과 해제 과정을 반복해야 하므로 HTTP response time이 긺    
     : 2RTT(Round Trip Time) + file transmission time
-<br>
 
 #### HTTP/1.1: Persistent Connections
 - HTTP/1.0을 보완하여 일정 시간동안 연결 상태를 유지
@@ -73,7 +72,7 @@ _REST API를 사용한 개발 서버에서 데이터를 추가할 때 사용됨_
 - TCP가 아닌 **UDP 기반**
 - QUIC(Quick UDP Internet Connections) 사용
     
-    <img src='./QUIC.jpg' width = 60%>
+    <img src='./QUIC.png' width = 60%>
 
     + TLS handshake와 달리 QUIC handshake는 negotiation이 없음    
      -> 상대방이 지원할만한 방법을 제시한 후 합의 과정 없이 사용, 상대방이 받아들이지 못하면 연결이 종료됨
